@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+
+  container3:
+
+    # Imageを作るための設定
+    build:
+
+      # buildするときのカレントディレクトリ
+      context: ./
+
+    # buildしたimageにつける名前
+    image: custom-nginx
+
+    # Containerの寿命と異なる永続的な保存領域をマウントする
+    volumes:
+
+      # こちらは通常のvolume。docker volume lsで見られる
+      - nginx-content:/usr/share/nginx/html/volume
+
+      # こちらはHost Volume。ホスト側のディレクトリをマウントする
+      - ./host-volume:/usr/share/nginx/html/host-volume
+
+    # コンテナのポートを外部に露出する。localhost:xxとしてアクセスできる
+    ports:
+
+      # container3:80をlocalhost:81としてバインドする
+      - 81:80
+
+volumes:
+  nginx-content:

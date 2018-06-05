@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  # mongo:
+  #   image: mongo:3.4
+
+  container2:
+
+    # Imageを作るための設定
+    build:
+
+      # buildするときのカレントディレクトリ
+      context: ./
+
+    # buildしたimageにつける名前
+    image: custom
+
+    # # mongodbを追加してみるテスト
+    # links:
+    #   - mongo:mongo
+
+    # # 実行時の環境変数の上書き
+    # environment:
+    #   MESSAGE_PREFIX: "overwrite"

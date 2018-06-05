@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+  # # mongodbを追加してみるテスト
+  # # volumeを使っていないので、downするとデータが消える
+  # mongo:
+  #   image: mongo:3.4
+
+  # コンテナの名前
+  container1:
+
+    # 最新のubuntuのイメージをDocker Hubから取得して利用
+    image: ubuntu
+
+    # メインのプロセスとして停止しないコマンドを実行
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+
+    # # mongodbを追加してみるテスト
+    # # mongoコンテナをDNSで参照できるようになる
+    # links:
+    #   - mongo:mongo
