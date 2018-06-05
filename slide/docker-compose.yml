@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  slide:
+
+    image: nginx
+
+    # Containerの寿命と異なる永続的な保存領域をマウントする
+    volumes:
+
+      # こちらはHost Volume。ホスト側のディレクトリをマウントする
+      - ./content:/usr/share/nginx/html
+
+    # コンテナのポートを外部に露出する。localhost:xxとしてアクセスできる
+    ports:
+
+      # container3:80をlocalhost:81としてバインドする
+      - 82:80
+

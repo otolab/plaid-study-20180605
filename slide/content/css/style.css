@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body {
+  font-family: 'Noto Sans JP';
+}
+h1, h2, h3 {
+  font-family: 'Noto Sans JP';
+  font-weight: normal;
+  text-shadow: 0 0 20px #fff;
+}
+.remark-slide-content {
+  font-size: 24px;
+  background-color: #efede0; /*#fffcee;*/
+  background-size: cover;
+}
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono';
+}
+.inverse {
+  background: #29aa9f;
+  color: #a1d6d3;
+  text-shadow: 0 0 20px #333;
+}
+.inverse h1, .inverse h2 {
+  color: #e3e3e3;
+  line-height: 1.0em;
+  text-shadow: 0 0 20px #333;
+}
+.remark-slide-content .logo img {
+  width: 20%;
+}
+.remark-slide-content .half img {
+  width: 45%;
+}
+.remark-slide-content img {
+  width: 100%;
+}
+.red-text {
+  color: #ff0000;
+}
+.blue-text {
+  color: #0000cc;
+}
+.small-text {
+  font-size: 14px;
+}
+table {
+  border: 2px #000000 solid;
+  width: 500px;
+}
+td, th {
+  border: 2px #000000 solid;
+  text-align: center;
+}
+
+#slide-agenda li {
+  color: white;  
+}
+
+.section-1 li:nth-child(1){
+  color: white;
+}
+
+.section-2 li:nth-child(2){
+  color: white;
+}
+
+.section-3 li:nth-child(3){
+  color: white;
+}
+
+.section-4 li:nth-child(4){
+  color: white;
+}
+
+.section-5 li:nth-child(5){
+  color: white;
+}
+
+.section-6 li:nth-child(6){
+  color: white;
+}
+
+.section-7 li:nth-child(7){
+  color: white;
+}
+
