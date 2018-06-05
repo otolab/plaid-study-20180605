@@ -296,7 +296,7 @@ Docker Imageを作ってみる
 
 ## 入ってみる
 
-* `docker-compose exec test /bin/bash`
+* `docker-compose exec container2 /bin/bash`
 * `vi message.txt`
 * `rm message.txt`
   - 止まる（コンテナはあるけどルートプロセスがいない状態）
