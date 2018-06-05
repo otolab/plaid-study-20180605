@@ -16,6 +16,8 @@ h1, h2, h3 {
 }
 .remark-code, .remark-inline-code {
   font-family: 'Ubuntu Mono';
+  border: 1px solid gray;
+  padding: 0 5px;
 }
 .inverse {
   background: #29aa9f;
