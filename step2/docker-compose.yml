@@ -2,9 +2,6 @@ version: '3'
 
 services:
 
-  # mongo:
-  #   image: mongo:3.4
-
   container2:
 
     # Imageを作るための設定
@@ -16,10 +13,14 @@ services:
     # buildしたimageにつける名前
     image: custom
 
-    # # mongodbを追加してみるテスト
+    # # TRY: 実行時の環境変数の上書き
+    # environment:
+    #   MESSAGE_PREFIX: "overwrite"
+
+    # # TRY: mongodbを追加してみる
     # links:
     #   - mongo:mongo
 
-    # # 実行時の環境変数の上書き
-    # environment:
-    #   MESSAGE_PREFIX: "overwrite"
+  # # TRY: mongodbを追加してみる
+  # mongo:
+  #   image: mongo:3.4

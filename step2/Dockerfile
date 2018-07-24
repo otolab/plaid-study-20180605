@@ -16,7 +16,7 @@ ENV MESSAGE_PREFIX "test"
 RUN \
   apt-get update \
   && apt-get install -y vim \
-#  && apt-get install -y mongodb-clients vim jq \
+#  && apt-get install -y mongodb-clients jq \
   && apt-get clean
 
 # 簡単なファイルをつくる
