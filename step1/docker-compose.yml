@@ -2,11 +2,6 @@ version: '3'
 
 services:
 
-  # # mongodbを追加してみるテスト
-  # # volumeを使っていないので、downするとデータが消える
-  # mongo:
-  #   image: mongo:3.4
-
   # コンテナの名前
   container1:
 
@@ -19,7 +14,12 @@ services:
       - -f
       - /dev/null
 
-    # # mongodbを追加してみるテスト
-    # # mongoコンテナをDNSで参照できるようになる
+    # # TRY: mongodbを追加してみる
+    # # mongoコンテナを内部DNSで参照できるようになる
     # links:
     #   - mongo:mongo
+
+  # # TRY: mongodbを追加してみる
+  # # volumeを使っていないので、downするとデータが消える
+  # mongo:
+  #   image: mongo:3.4
